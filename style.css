@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(22, 134, 161, 0.959);
+}
+h1{
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.main{
+    height: 700px;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 22px;
+}
+.hide{
+    display: none;
+}
+.newGame{
+    font-size: 30px;
+    padding: 9px;
+    background-color: #191913;
+    color: white;
+    border: none;
+    border-radius: 16px;
+}
+
+.buttons{
+    /* background-color:black; */
+    /* border: 5px solid; */
+    padding: 7px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 12px;
+    row-gap: 12px;
+    width: 470px;
+}
+.buton{
+    border: none;
+    border-radius: 7px;
+    font-size: 60px;
+    padding: 15px;
+    height: 150px;
+    width: 150px;
+    color: rgb(226, 12, 12);
+    font-weight: 600;
+    /* background-color: rgba(212, 179, 87, 0.966); */
+}
+.reset{
+    font-size: 30px;
+    padding: 9px;
+    background-color: #191913;
+    color: white;
+    border: none;
+    border-radius: 16px;
+}
+.result{
+    
+    font-size: 40px;
+}
+.reset:hover{
+    color: black;
+    background-color: white;
+    transition: all .5s ease-in-out;
+}
