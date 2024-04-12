@@ -77,3 +77,13 @@ h1{
     background-color: white;
     transition: all .5s ease-in-out;
 }
+
+@media  (max-width:550px) {
+    .buttons{
+        width: 300px;
+    }
+    .buton{
+        height: 90px;
+        width: 90px;
+    }
+}
