@@ -4,6 +4,7 @@ let turn=true;
 let result=document.querySelector('.result');
 let main=document.querySelector('.main');
 let container=document.querySelector('.container');
+let count=0;
 
 let winPatterns=[
     [0,1,2],
@@ -52,6 +53,8 @@ const checkWinner = ()=>{
             if(pos1Val === pos2Val && pos2Val === pos3Val){
                 result.innerText=`${pos1Val} is the Winner`;
                 boxdis();
+            }else if(count===9){
+                result.innerText="Match Draw";
             }
         }
     }
@@ -63,5 +66,6 @@ reset.addEventListener('click',()=>{
         buttons.disabled=false;
         buttons.style.backgroundColor='white';
         result.innerText='';
+        count=0;
     })
 })
