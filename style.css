@@ -10,6 +10,10 @@ h1{
     font-size: 40px;
     font-family: 'Courier New', Courier, monospace;
 }
+p{
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
 .main{
     height: 700px;
     gap: 40px;
