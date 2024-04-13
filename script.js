@@ -32,6 +32,8 @@ buttons.forEach((buttons)=>{
             buttons.innerText='0';
             turn=true;
         }
+        count++;
+        console.log(count);
         buttons.disabled=true;
         buttons.style.backgroundColor='rgba(212, 179, 87, 0.966)';
         checkWinner();
@@ -53,7 +55,7 @@ const checkWinner = ()=>{
             if(pos1Val === pos2Val && pos2Val === pos3Val){
                 result.innerText=`${pos1Val} is the Winner`;
                 boxdis();
-            }else if(count===9){
+            }            else if(count===9){
                 result.innerText="Match Draw";
             }
         }
